@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BVC</string>
+    <string name="app_full_name">Bluetooth Voice Communication</string>
+    
+    <!-- Main Activity -->
+    <string name="discover_devices">Discover Devices</string>
+    <string name="voice_call">Voice Call</string>
+    <string name="emergency_call">Emergency Call</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Discovery Activity -->
+    <string name="discovery_title">Device Discovery</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="no_devices_found">No devices found</string>
+    <string name="scanning">Scanning for devices...</string>
+    
+    <!-- Voice Call Activity -->
+    <string name="voice_call_title">Voice Call</string>
+    <string name="calling">Calling...</string>
+    <string name="in_call">In Call</string>
+    <string name="end_call">End Call</string>
+    <string name="answer_call">Answer</string>
+    <string name="reject_call">Reject</string>
+    <string name="incoming_call">Incoming Call</string>
+    
+    <!-- Settings Activity -->
+    <string name="settings_title">Settings</string>
+    <string name="device_settings">Device Settings</string>
+    <string name="audio_settings">Audio Settings</string>
+    <string name="network_settings">Network Settings</string>
+    <string name="about">About</string>
+    
+    <!-- Device Settings -->
+    <string name="device_name">Device Name</string>
+    <string name="device_id">Device ID</string>
+    <string name="device_role">Device Role</string>
+    
+    <!-- Audio Settings -->
+    <string name="audio_codec">Audio Codec</string>
+    <string name="audio_quality">Audio Quality</string>
+    <string name="microphone_gain">Microphone Gain</string>
+    <string name="speaker_volume">Speaker Volume</string>
+    
+    <!-- Network Settings -->
+    <string name="max_hops">Maximum Hops</string>
+    <string name="discovery_interval">Discovery Interval</string>
+    <string name="connection_timeout">Connection Timeout</string>
+    
+    <!-- Status Messages -->
+    <string name="service_running">Service: Running</string>
+    <string name="service_stopped">Service: Stopped</string>
+    <string name="bluetooth_disabled">Bluetooth is disabled</string>
+    <string name="permissions_required">Permissions required</string>
+    
+    <!-- Error Messages -->
+    <string name="error_bluetooth_init">Failed to initialize Bluetooth</string>
+    <string name="error_audio_init">Failed to initialize audio</string>
+    <string name="error_no_devices">No devices available</string>
+    <string name="error_call_failed">Call failed</string>
+    <string name="error_permission_denied">Permission denied</string>
+    
+    <!-- Dialogs -->
+    <string name="permission_dialog_title">Permissions Required</string>
+    <string name="permission_dialog_message">BVC requires Bluetooth and audio permissions to function properly.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <!-- About -->
+    <string name="app_version">Version 1.0</string>
+    <string name="app_description">Bluetooth Voice Communication system for short-distance voice calls using mesh networking.</string>
+    
+</resources>
