@@ -1,3 +1,60 @@
-# Ignore jar files
+# Android/IntelliJ
+.idea/
+*.iml
+.gradle/
+build/
+local.properties
+.DS_Store
+*.apk
+*.ap_*
+*.dex
+*.class
+*.log
+*.keystore
+*.jks
+*.cxx/
+*.hprof
+captures/
+output.json
 
-.jar
+
+# Gradle Wrapper and Build Artifacts
+/gradle/wrapper/gradle-wrapper.jar
+/gradle-*.zip
+/gradle-dist/
+android/gradle-dist/
+android/.gradle/
+*.jar
+*.zip
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Test/coverage
+*.ec
+*.exec
+*.coverage
+*.hprof
+
+# Misc
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+
+# Python cache (but NOT source code or folders)
+*.pyc
+__pycache__/
+!src/
+!tests/
+!tools/
+!*.py
+
+# Node/npm (if any left)
+node_modules/
+
+# VSCode
+.vscode/

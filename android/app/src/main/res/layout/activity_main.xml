@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.MainActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tv_app_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Device Status -->
+    <TextView
+        android:id="@+id/tv_device_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Device: Initializing..."
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_app_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Service Status -->
+    <TextView
+        android:id="@+id/tv_service_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Service: Stopped"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_device_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Network Stats -->
+    <TextView
+        android:id="@+id/tv_network_stats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Network: 0/0 devices, 0 connections"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_service_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Discovery Button -->
+    <Button
+        android:id="@+id/btn_discovery"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Discover Devices"
+        android:textSize="16sp"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/tv_network_stats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_primary"
+        android:textColor="@android:color/white" />
+
+    <!-- Voice Call Button -->
+    <Button
+        android:id="@+id/btn_voice_call"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Voice Call"
+        android:textSize="16sp"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_discovery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_secondary"
+        android:textColor="@android:color/white" />
+
+    <!-- Emergency Call Button -->
+    <Button
+        android:id="@+id/btn_emergency_call"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Emergency Call"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btn_voice_call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_emergency"
+        android:textColor="@android:color/white" />
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Settings"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_outline"
+        android:textColor="@color/primary_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
