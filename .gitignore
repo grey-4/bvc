@@ -17,10 +17,15 @@ local.properties
 captures/
 output.json
 
-# Gradle Wrapper
+
+# Gradle Wrapper and Build Artifacts
 /gradle/wrapper/gradle-wrapper.jar
 /gradle-*.zip
 /gradle-dist/
+android/gradle-dist/
+android/.gradle/
+*.jar
+*.zip
 
 # OS
 Thumbs.db
